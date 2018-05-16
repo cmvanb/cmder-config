@@ -9,6 +9,5 @@ mklink /J "%cmder_root%\config" "%~dp0..\config"
 :: remove current version of ConEmu.xml
 rm "%cmder_root%\vendor\conemu-maximus5\ConEmu.xml"
 
-:: copy over repo version of ConEmu.xml
-:: NOTE: xcopy has an annoying prompt for file or directory (f/d), so echo f as user input
-echo f | xcopy /f /y "%~dp0..\vendor\conemu-maximus5\ConEmu.xml" "%cmder_root%\vendor\conemu-maximus5\ConEmu.xml"
+:: make a symbolic link for ConEmu.xml
+mklink "%cmder_root%\vendor\conemu-maximus5\ConEmu.xml" "%~dp0..\vendor\conemu-maximus5\ConEmu.xml"

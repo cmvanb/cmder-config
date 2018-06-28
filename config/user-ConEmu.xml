@@ -482,8 +482,8 @@
 			<value name="DndLKey" type="hex" data="00"/>
 			<value name="DndRKey" type="hex" data="a2"/>
 			<value name="WndDragKey" type="dword" data="00121101"/>
-			<key name="Tasks" modified="2018-06-05 16:24:14" build="180206">
-				<value name="Count" type="long" data="11"/>
+			<key name="Tasks" modified="2018-06-28 10:34:19" build="180206">
+				<value name="Count" type="long" data="12"/>
 				<key name="Task1" modified="2018-05-23 16:18:36" build="180206">
 					<value name="Name" type="string" data="{ShiftVision::Dev}"/>
 					<value name="GuiArgs" type="string" data=""/>
@@ -587,6 +587,15 @@
 					<value name="Active" type="long" data="0"/>
 					<value name="Count" type="long" data="1"/>
 					<value name="Cmd1" type="string" data='cmd /c "%ConEmuDir%\..\git-for-windows\bin\bash --login -i" -new_console:d:%USERPROFILE%'/>
+				</key>
+				<key name="Task12" modified="2018-06-28 10:34:19" build="180206">
+					<value name="Name" type="string" data="{BarrierVision::Dev}"/>
+					<value name="Flags" type="dword" data="00000004"/>
+					<value name="Hotkey" type="dword" data="00000000"/>
+					<value name="GuiArgs" type="string" data=""/>
+					<value name="Active" type="long" data="0"/>
+					<value name="Count" type="long" data="1"/>
+					<value name="Cmd1" type="string" data='*cmd /k " "%ConEmuDir%\..\init.bat" &amp;&amp; "%CMDER_ROOT%\config\evision.bat" &amp;&amp; call cd %^bv% " -new_console:t:BarrierVision'/>
 				</key>
 			</key>
 			<key name="Apps" modified="2018-03-16 12:33:10" build="161206">

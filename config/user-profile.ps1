@@ -21,5 +21,5 @@
 
 }
 
-## <Continue to add your own>
-
+# Work
+$Env:proj = "C:\Projects"

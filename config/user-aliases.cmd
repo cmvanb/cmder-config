@@ -6,7 +6,7 @@
 ;= Add aliases below here
 e.=explorer .
 gs=git status $*
-gl=git log --oneline --all --graph --decorate  $*
+gl=git log --color --graph --pretty=format:"%Cred%h%Creset -%C(bold yellow)%d%Creset %s %Cgreen(%aN, %cr)%Creset" --abbrev-commit $*
 ga=git add $*
 gaa=git add -A $*
 gc=git commit -m $*

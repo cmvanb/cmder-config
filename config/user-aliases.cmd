@@ -10,8 +10,14 @@ gl=git log --color --graph --pretty=format:"%Cred%h%Creset -%C(bold yellow)%d%Cr
 ga=git add $*
 gaa=git add -A $*
 gc=git commit -m $*
+gco=git checkout $*
 gp=git push $*
+gpu=git pull $*
 gd=git diff $*
+gds=git diff --staged $*
+grs=git reset --hard
+gb=git branch
+gr=git remote
 ls=ls --color --show-control-chars -A -C -F $*
 lso=ls $*
 qgrep=grep -inIErs --color $*

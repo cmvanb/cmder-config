@@ -10,6 +10,7 @@ gl=git log --color --graph --pretty=format:"%Cred%h%Creset -%C(bold yellow)%d%Cr
 ga=git add $*
 gaa=git add -A $*
 gc=git commit -m $*
+gca=git commit --amend
 gco=git checkout $*
 gp=git push $*
 gpu=git pull $*

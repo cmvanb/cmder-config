@@ -12,6 +12,7 @@ gaa=git add -A $*
 gc=git commit -m $*
 gca=git commit --amend
 gco=git checkout $*
+gcp=git cherry-pick $*
 gp=git push $*
 gpu=git pull $*
 gd=git diff $*

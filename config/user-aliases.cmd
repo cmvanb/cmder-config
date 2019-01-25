@@ -18,7 +18,7 @@ gpu=git pull $*
 gd=git diff $*
 gds=git diff --staged $*
 grs=git reset --hard $*
-grb=git rebase $1 --strategy-option="rename-threshold=$2" $*
+grb=git rebase --strategy-option="rename-threshold=$1" $2
 gb=git branch $*
 gr=git remote $*
 ls=ls --color --show-control-chars -A -C -F $*

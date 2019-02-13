@@ -4,26 +4,14 @@
 ;= rem In batch mode, jump to the end of the file
 ;= goto:eof
 ;= Add aliases below here
+
+;= rem TERMINAL
+clear=cls
+history=cat "%CMDER_ROOT%\config\.history"
+unalias=alias /d $1
+
+;= rem WINDOWS NAVIGATION
 e.=explorer .
-gs=git status $*
-gl=git log --color --graph --pretty=format:"%Cred%h%Creset -%C(bold yellow)%d%Creset %s %Cgreen(%aN, %cr)%Creset" --abbrev-commit $*
-ga=git add $*
-gaa=git add -A $*
-gc=git commit -m $*
-gca=git commit --amend
-gco=git checkout $*
-gcp=git cherry-pick $*
-gp=git push $*
-gpu=git pull $*
-gd=git diff $*
-gds=git diff --staged $*
-grs=git reset --hard $*
-grb=git rebase --strategy-option="rename-threshold=$1" $2
-gb=git branch $*
-gr=git remote $*
-ls=ls --color --show-control-chars -A -C -F $*
-lso=ls $*
-qgrep=grep -inIErs --color $*
 ..=cd ..
 ...=cd ../..
 ....=cd ../../..
@@ -34,9 +22,27 @@ qgrep=grep -inIErs --color $*
 .........=cd ../../../../../../../..
 ..........=cd ../../../../../../../../..
 
-pwd=cd
-clear=cls
-history=cat "%CMDER_ROOT%\config\.history"
-unalias=alias /d $1
-vi=vim $*
-cmderr=cd /d "%CMDER_ROOT%"
+;= rem GIT COMMANDS
+ga=git add $*
+gaa=git add -A $*
+gb=git branch $*
+gc=git commit -m $*
+gca=git commit --amend
+gco=git checkout $*
+gcp=git cherry-pick $*
+gd=git diff $*
+gds=git diff --staged $*
+gf=git fetch $*
+gl=git log --color --graph --pretty=format:"%Cred%h%Creset -%C(bold yellow)%d%Creset %s %Cgreen(%aN, %cr)%Creset" --abbrev-commit $*
+gp=git push $*
+gpu=git pull $*
+gr=git remote $*
+grb=git rebase --strategy-option="rename-threshold=$1" $2
+grs=git reset --hard $*
+gs=git status $*
+
+;= rem TOOLS
+ls=ls --color --show-control-chars -A -C -F $*
+lso=ls $*
+qgrep=grep -inIErs --color $*
+

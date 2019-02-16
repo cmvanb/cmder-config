@@ -37,9 +37,12 @@ gl=git log --color --graph --pretty=format:"%Cred%h%Creset -%C(bold yellow)%d%Cr
 gp=git push $*
 gpu=git pull $*
 gr=git remote $*
-grb=git rebase --strategy-option="rename-threshold=$1" $2
+grb=git rebase $*
+grbr=git rebase --strategy-option="rename-threshold=$1" $2
 grs=git reset --hard $*
 gs=git status $*
+yolo=git add -A & git commit -m "$(curl -s whatthecommit.com/index.txt)" & git push
+wip=git add -A & git commit -m "[WIP] $*" & git push
 
 ;= rem TOOLS
 ls=ls --color --show-control-chars -A -C -F $*

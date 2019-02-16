@@ -41,8 +41,7 @@ grb=git rebase $*
 grbr=git rebase --strategy-option="rename-threshold=$1" $2
 grs=git reset --hard $*
 gs=git status $*
-yolo=git add -A & git commit -m "$(curl -s whatthecommit.com/index.txt)" & git push
-wip=git add -A & git commit -m "[WIP] $*" & git push
+wip=git add -A & git commit -m "[WIP] $*"
 
 ;= rem TOOLS
 ls=ls --color --show-control-chars -A -C -F $*

@@ -41,6 +41,7 @@ grb=git rebase $*
 grbr=git rebase --strategy-option="rename-threshold=$1" $2
 grs=git reset --hard $*
 gs=git status $*
+yolo=git add -A & git commit -m "$*" & git push
 wip=git add -A & git commit -m "[WIP] $*"
 
 ;= rem TOOLS

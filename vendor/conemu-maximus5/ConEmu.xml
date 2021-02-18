@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <key name="Software">
 	<key name="ConEmu">
-		<key name=".Vanilla" modified="2021-02-18 06:48:45" build="191012">
+		<key name=".Vanilla" modified="2021-02-18 07:02:40" build="191012">
 			<value name="ColorTable00" type="dword" data="00000000"/>
 			<value name="ColorTable01" type="dword" data="00ff5555"/>
 			<value name="ColorTable02" type="dword" data="003bd01d"/>
@@ -122,7 +122,7 @@
 			<value name="ColorKeyTransparent" type="hex" data="00"/>
 			<value name="ColorKeyValue" type="dword" data="00010101"/>
 			<value name="UseCurrentSizePos" type="hex" data="01"/>
-			<value name="WindowMode" type="dword" data="0000051f"/>
+			<value name="WindowMode" type="dword" data="00000520"/>
 			<value name="ConWnd Width" type="dword" data="00000050"/>
 			<value name="ConWnd Height" type="dword" data="00000019"/>
 			<value name="Cascaded" type="hex" data="01"/>
@@ -694,7 +694,7 @@
 			<value name="StatusBar.Hide.Dpi" type="hex" data="01"/>
 			<value name="TabFlashChanged" type="long" data="8"/>
 			<value name="TabModifiedSuffix" type="string" data="[*]"/>
-			<key name="HotKeys" modified="2021-02-18 06:44:31" build="191012">
+			<key name="HotKeys" modified="2021-02-18 07:02:40" build="191012">
 				<value name="KeyMacroVersion" type="hex" data="02"/>
 				<value name="Multi.Modifier" type="dword" data="00000011"/>
 				<value name="Multi.ArrowsModifier" type="dword" data="0000005b"/>
@@ -889,7 +889,7 @@
 				<value name="Key.BufPrUp" type="dword" data="00121121"/>
 				<value name="Key.BufPrDn" type="dword" data="00121122"/>
 				<value name="CheckUpdates" type="dword" data="00105b55"/>
-				<value name="Multi.NewWndConfirm" type="dword" data="00001154"/>
+				<value name="Multi.NewWndConfirm" type="dword" data="00000000"/>
 			</key>
 			<value name="StartCreateDelay" type="ulong" data="100"/>
 			<value name="DefaultTerminalDebugLog" type="hex" data="00"/>

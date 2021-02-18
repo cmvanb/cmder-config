@@ -2,3 +2,6 @@
 
 # To add a new vendor to the path, do something like:
 # export PATH=${CMDER_ROOT}/vendor/whatever:${PATH}
+
+export proj=D:/Projects
+
